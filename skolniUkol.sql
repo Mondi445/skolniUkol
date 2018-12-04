@@ -120,7 +120,7 @@ CREATE TABLE IF NOT EXISTS `skolniUkol`.`su_users_groups` (
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8;
 
-INSERT INTO `mt_users_groups` (`id`, `user_id`, `group_id`) VALUES
+INSERT INTO `su_users_groups` (`id`, `user_id`, `group_id`) VALUES
      (1,1,1),
      (2,1,2);
 
