@@ -36,6 +36,9 @@ CREATE TABLE IF NOT EXISTS `skolniUkol`.`su_groups` (
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8;
 
+INSERT INTO `su_groups` (`id`, `name`, `description`) VALUES
+     (1,'admin','Administrator'),
+     (2,'members','General User');
 
 -- -----------------------------------------------------
 -- Table `skolniUkol`.`su_users`
@@ -117,6 +120,9 @@ CREATE TABLE IF NOT EXISTS `skolniUkol`.`su_users_groups` (
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8;
 
+INSERT INTO `mt_users_groups` (`id`, `user_id`, `group_id`) VALUES
+     (1,1,1),
+     (2,1,2);
 
 -- -----------------------------------------------------
 -- Table `skolniUkol`.`su_login_attempts`
