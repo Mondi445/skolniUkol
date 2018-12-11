@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Počítač: 127.0.0.1
--- Vytvořeno: Úte 11. pro 2018, 11:20
+-- Vytvořeno: Úte 11. pro 2018, 11:27
 -- Verze serveru: 10.1.16-MariaDB
 -- Verze PHP: 5.6.24
 
@@ -65,7 +65,11 @@ CREATE TABLE `su_model` (
 --
 
 INSERT INTO `su_model` (`idModel`, `nazev`, `pic`, `karoserie`, `barva`, `znacka_idZnacka`) VALUES
-(1, 'Fabia', 'fabia.png', '0', '0', 1);
+(1, 'Fabia', 'fabia.png', '0', '0', 1),
+(2, 'R8', 'r8.png', 'Coupé', 'černá', 2),
+(3, 'Octavia', 'octavia.png', 'sedan', 'bílá', 1),
+(4, 'Passat', 'passat.png', 'kombajn', 'černá', 5),
+(5, 'Civic Type R', 'civic.png', 'Hatchbag', 'bílá', 6);
 
 -- --------------------------------------------------------
 
@@ -121,7 +125,12 @@ CREATE TABLE `su_znacka` (
 --
 
 INSERT INTO `su_znacka` (`idZnacka`, `nazevZnacky`) VALUES
-(1, 'Škoda');
+(1, 'Škoda'),
+(2, 'Audi'),
+(3, 'BMW'),
+(4, 'Mercedes-Benz'),
+(5, 'Volkswagen'),
+(6, 'Honda');
 
 --
 -- Klíče pro exportované tabulky
@@ -185,7 +194,7 @@ ALTER TABLE `su_login_attempts`
 -- AUTO_INCREMENT pro tabulku `su_model`
 --
 ALTER TABLE `su_model`
-  MODIFY `idModel` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `idModel` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 --
 -- AUTO_INCREMENT pro tabulku `su_users`
 --
@@ -200,7 +209,7 @@ ALTER TABLE `su_users_groups`
 -- AUTO_INCREMENT pro tabulku `su_znacka`
 --
 ALTER TABLE `su_znacka`
-  MODIFY `idZnacka` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `idZnacka` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 --
 -- Omezení pro exportované tabulky
 --
