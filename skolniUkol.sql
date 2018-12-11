@@ -63,6 +63,13 @@ ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8;
 
 
+CREATE TABLE IF NOT EXISTS `su_ci_session` (
+  `id` varchar(40) COLLATE utf8_czech_ci NOT NULL,
+  `ip_address` varchar(45) COLLATE utf8_czech_ci NOT NULL,
+  `timestamp` int(10) UNSIGNED NOT NULL DEFAULT '0',
+  `data` blob NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_czech_ci;
+
 -- -----------------------------------------------------
 -- Table `skolniUkol`.`su_users_groups`
 -- -----------------------------------------------------
