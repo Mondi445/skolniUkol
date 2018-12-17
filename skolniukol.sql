@@ -69,7 +69,10 @@ INSERT INTO `su_model` (`idModel`, `nazev`, `pic`, `karoserie`, `barva`, `znacka
 (2, 'R8', 'r8.png', 'Coupé', 'černá', 2),
 (3, 'Octavia', 'octavia.png', 'sedan', 'bílá', 1),
 (4, 'Passat', 'passat.png', 'kombajn', 'černá', 5),
-(5, 'Civic Type R', 'civic.png', 'Hatchbag', 'bílá', 6);
+(5, 'Civic Type R', 'civic.png', 'Hatchbag', 'bílá', 6),
+(6, '6', '6.png', 'sedan', 'červená', 7),
+(7, 'AMG GT-R', 'Coupé', 'zelená' 4);
+
 
 -- --------------------------------------------------------
 
@@ -130,7 +133,8 @@ INSERT INTO `su_znacka` (`idZnacka`, `nazevZnacky`) VALUES
 (3, 'BMW'),
 (4, 'Mercedes-Benz'),
 (5, 'Volkswagen'),
-(6, 'Honda');
+(6, 'Honda'),
+(7, 'Mazda');
 
 --
 -- Klíče pro exportované tabulky
