@@ -71,7 +71,7 @@ INSERT INTO `su_model` (`idModel`, `nazev`, `pic`, `karoserie`, `barva`, `znacka
 (4, 'Passat', 'passat.png', 'kombajn', 'černá', 5),
 (5, 'Civic Type R', 'civic.png', 'Hatchbag', 'bílá', 6),
 (6, '6', '6.png', 'sedan', 'červená', 7),
-(7, 'AMG GT-R', 'Coupé', 'zelená' 4);
+(7, 'AMG GT-R', 'amggt-r.png', 'Coupé', 'zelená', 4);
 
 
 -- --------------------------------------------------------
